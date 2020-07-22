@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tab_fourth_item_lay"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_fourth_item_de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ffffff"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/tab_fourth_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/ffffff"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/tab_fourth_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tab_fourth_item_icon"
+            android:gravity="center_vertical"
+            android:text="sss"
+            android:textColor="@color/c666666"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tab_fourth_item_rigth_message"
+            android:layout_toLeftOf="@id/tab_fourth_item_next"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/c666666"
+            android:text="sssss"
+            android:paddingRight="10dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/tab_fourth_item_next"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="@color/c666666"
+            android:text="@string/next"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/cf0f2f5"
+        android:layout_height="1dp">
+    </LinearLayout>
+</LinearLayout>

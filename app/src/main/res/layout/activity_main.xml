@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".activity.fragment.MainActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/ffffff"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <RelativeLayout
+                android:id="@+id/first_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/first_icon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tab_car_icon"
+                    android:textColor="@color/c4169E1"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/first_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_icon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="运输"
+                    android:textColor="@color/c4169E1"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/second_icon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tab_location_icon"
+                    android:textColor="@color/c666666"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/second_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_icon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="位置"
+                    android:textColor="@color/c666666"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/third_tab"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:clipChildren="false"-->
+                <!--android:clipToPadding="false">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/third_icon_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="@string/shortcut"-->
+                    <!--android:textColor="@color/c666666"-->
+                    <!--android:textSize="25sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/third_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/third_icon_tv"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="快捷键"-->
+                    <!--android:textColor="@color/c666666"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:id="@+id/third_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/qiangdan_messagess1"
+                    android:background="@drawable/boder_rounded_read1"
+                    android:layout_width="20dp"
+                    android:text="1000"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/ffffff"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginRight="-15dp"
+                    android:layout_alignRight="@id/third_icon_tv"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/third_icon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tab_qiangdan_icon"
+                    android:textColor="@color/c666666"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/third_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/third_icon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="抢单"
+                    android:textColor="@color/c666666"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/four_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/four_icon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tab_user_icon"
+                    android:textColor="@color/c666666"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/four_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/four_icon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="我的"
+                    android:textColor="@color/c666666"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

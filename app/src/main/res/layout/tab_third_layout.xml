@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <include layout="@layout/toolbar"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:scrollbars="none"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_marginTop="10dp"
+          android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:paddingTop="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:background="@color/cffcd00"
+             android:paddingBottom="10dp"
+             android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/ffffff"
+                android:text="注意！！拍照时请查看您的单子是否有二维码，如果没有，请联系客服或后台"
+                android:textSize="16sp"
+                android:layout_height="match_parent" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/cf0f2f5"></LinearLayout>
+         <everlinkintl.com.myapp.view.NoScrollGridView
+             android:background="@color/ffffff"
+             android:id="@+id/up_picture_gridview"
+             android:numColumns="3"
+             android:padding="20dp"
+             android:layout_width="match_parent"
+             android:cacheColorHint="@color/c00000000"
+             android:listSelector="@color/c00000000"
+             android:scrollbars="none"
+             android:verticalSpacing = "10dp"
+             android:horizontalSpacing = "10dp"
+             android:layout_height="wrap_content">
+         </everlinkintl.com.myapp.view.NoScrollGridView>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/send_fail"
+                android:layout_width="100dp"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="送货失败"
+                android:textColor="@color/ffffff"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/send_succeed"
+                android:layout_width="100dp"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="送货成功"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/ffffff"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_height="40dp" />
+         </LinearLayout>
+      </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>

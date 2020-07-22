@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+   <Button
+       android:id="@+id/tab4_fool_bt"
+       android:layout_width="match_parent"
+       android:layout_marginLeft="70dp"
+       android:layout_marginRight="70dp"
+       android:layout_centerVertical="true"
+       android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+       android:text="退 出"
+       android:textSize="16sp"
+       android:textColor="@color/ffffff"
+       android:layout_height="45dp" />
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/ffffff"
+    android:id="@+id/operation_task_list_ly"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="3"
+       android:paddingLeft="10dp"
+       android:paddingBottom="10dp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/operation_task_list_num"
+           android:layout_width="wrap_content"
+           android:text="RDRKUSVIAI16090061"
+           android:paddingTop="5dp"
+           android:textColor="@color/c666666"
+           android:textSize="16sp"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/operation_task_list_volume_weight"
+           android:layout_width="wrap_content"
+           android:textColor="@color/c666666"
+           android:textSize="14sp"
+           android:text="能否及时打开房间啊上的分厘卡"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/operation_task_list_time"
+           android:layout_width="wrap_content"
+           android:textColor="@color/c666666"
+           android:textSize="14sp"
+           android:text="十分骄傲离开房间啊圣诞快乐"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/operation_task_list_dec"
+           android:layout_width="wrap_content"
+           android:textColor="@color/c666666"
+           android:textSize="14sp"
+           android:text="阿富汗的设计开发还是大家看法和实打实的"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+     <Button
+         android:layout_width="70dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerInParent="true"
+         android:text="等待提货"
+         android:textSize="11sp"
+         android:visibility="gone"
+         android:layout_height="35dp" />
+        <CheckBox
+            android:id="@+id/operation_task_list_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            style="@style/CustomCheckboxTheme"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

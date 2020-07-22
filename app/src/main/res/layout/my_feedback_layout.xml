@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:id="@+id/my_feedback_rl"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/my_feedback_null_list_icon"
+            android:layout_width="wrap_content"
+            android:textSize="55sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/null_list_icon"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/my_feedback_null_list_icon"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="暂无反馈消息"
+            android:textSize="15sp"
+            android:textColor="@color/c666666"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/my_feedback_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@color/c00000000">
+    </ListView>
+</LinearLayout>

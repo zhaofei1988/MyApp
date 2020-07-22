@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" android:id="@+id/operation_task_toobar"></include>
+
+    <ListView
+        android:layout_below="@id/operation_task_toobar"
+        android:id="@+id/operation_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none">
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="11sp"
+            android:text="提货失败"
+            android:textColor="@color/c4169E1"
+            android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/ffffff"
+            android:textSize="11sp"
+            android:text="车辆到达"
+            android:background="@drawable/boder_rounde_cff9600"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="11sp"
+            android:textColor="@color/ffffff"
+            android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+            android:text="提货成功"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

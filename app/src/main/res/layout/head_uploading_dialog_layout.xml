@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/c50000000"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/uploding_photos_bt"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@id/uploding_photo_album_bt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/boder_rounded_ffffff_ffffff"
+        android:textSize="18sp"
+        android:textColor="@color/c666666"
+        android:layout_marginBottom="50dp"
+        android:text="拍 照"
+        android:layout_height="45dp" />
+    <Button
+        android:id="@+id/uploding_photo_album_bt"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@id/uploding_close_bt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/boder_rounded_ffffff_ffffff"
+        android:textSize="18sp"
+        android:textColor="@color/c666666"
+        android:layout_marginBottom="80dp"
+        android:text="相 册"
+        android:layout_height="45dp" />
+    <Button
+        android:id="@+id/uploding_close_bt"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+        android:textSize="18sp"
+        android:textColor="@color/ffffff"
+        android:layout_marginBottom="50dp"
+        android:text="取 消"
+        android:layout_height="45dp" />
+</RelativeLayout>

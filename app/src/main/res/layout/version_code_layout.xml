@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/version_code_img"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="扫描二维码，即可下载最新客户端" />
+
+    <LinearLayout
+        android:id="@+id/version_code_update_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="检测更新"
+            android:textColor="@color/c666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/version_code_update_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="1.0.0"
+            android:textColor="@color/c666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/version_code_update_next_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c666666"
+            android:text="@string/next"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cf0f2f5"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/version_code_about_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关于恒联 "
+            android:textColor="@color/c666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/version_code_about_next_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c666666"
+            android:text="@string/next"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
